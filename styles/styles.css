@@ -1,0 +1,37 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* Styles do projeto */
+
+:root {
+    --white-background: #f0f2f5;
+}
+
+body {
+    background: var(--white-background);
+    font-family: "Poppins", sans-serif, Arial;
+}
