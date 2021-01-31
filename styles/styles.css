@@ -14,24 +14,107 @@ ul {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-ul {
-    font-size: 1em;
-    font-weight: normal;
-}
-
-/* Styles do projeto */
+/* Global*/
 
 :root {
     --white-background: #f0f2f5;
+    --White-standard: #fff;
+    --header-standard: #282a36;
+    --purple-card: #8257e5;
+    --dark-blue: #363f5f;
+    --light-blue: #969cb3;
+    --red-danger: #ff5555;
+    --green-standard: #50fa7b;
 }
 
 body {
     background: var(--white-background);
     font-family: "Poppins", sans-serif, Arial;
+}
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+/* Titles */
+
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+    font-weight: normal;
+}
+
+/* Header */
+
+header {
+    background: var(--header-standard);
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+#logo {
+    color: var(--White-standard);
+    font-weight: 400;
+}
+
+/* Balance */
+
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: var(--White-standard);
+    margin-top: 0;
+}
+
+/* Cards */
+
+.balance__card {
+    background: var(--White-standard);
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.balance__card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+.balance__card p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.balance__card--purple {
+    background: var(--purple-card);
+    color: var(--White-standard);
+}
+
+/* Transaction */
+
+#data__table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+}
+
+table th {
+    background: var(--White-standard);
+    color: var(--light-blue);
+    font-weight: normal;
+    padding: 1rem 2rem;
+}
+
+table td {
+    background: var(--White-standard);
+}
+
+/* Footer */
+
+footer p {
+    text-align: center;
 }
