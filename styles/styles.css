@@ -32,6 +32,19 @@ body {
     font-family: "Poppins", sans-serif, Arial;
 }
 
+.sr__only {
+    /* A propriedade ela não é retirada, mas sim escondida */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 .container {
     width: min(90vw, 800px);
     margin: auto;
